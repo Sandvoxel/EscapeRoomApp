@@ -1,6 +1,5 @@
-package dev.trainwreck.escaperoomapp.gameobjects;
+package dev.trainwreck.escaperoomapp.data.gameobjects;
 
-import javax.swing.*;
 import java.util.UUID;
 
 public class Step {

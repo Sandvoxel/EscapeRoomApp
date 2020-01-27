@@ -1,10 +1,8 @@
-package dev.trainwreck.escaperoomapp.gameobjects;
+package dev.trainwreck.escaperoomapp.data.gameobjects;
 
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;

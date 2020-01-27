@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31205976-f4ad-46dc-bb92-548cd88a6d03" name="Default Changelist" comment="" />
+    <list default="true" id="6d1a5735-6513-4b79-a251-125f9c58b745" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EscapeRoomApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/controlers/ClueScreenControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/ClueData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/screens/ClueScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/controlers/MainScreenControler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/gameobjects/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/gameobjects/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/gameobjects/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/gameobjects/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/gameobjects/Step.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/gameobjects/Step.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/screens/MainScreen.fxml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,32 +32,19 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="EscapeRoomApp" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1Wp8Rf8CyToqoVYNpZ1LVZgwkD5" />
+  <component name="ProjectId" id="1WzYCDAwFNxXyUQ51iXRveHjfZm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -48,24 +52,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Gluon/SceneBuilder.lnk" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="dev.trainwreck.escaperoomapp.Main" />
-      <module name="EscapeRoomApp.main" />
+      <module name="EscapeRoomApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,15 +79,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="31205976-f4ad-46dc-bb92-548cd88a6d03" name="Default Changelist" comment="" />
-      <created>1579835168064</created>
+      <changelist id="6d1a5735-6513-4b79-a251-125f9c58b745" name="Default Changelist" comment="" />
+      <created>1580153760050</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1579835168064</updated>
-      <workItem from="1579835169493" duration="1992000" />
-      <workItem from="1579893598687" duration="15582000" />
-      <workItem from="1580072510020" duration="9387000" />
-      <workItem from="1580099632065" duration="1306000" />
+      <updated>1580153760050</updated>
+      <workItem from="1580153761297" duration="240000" />
+      <workItem from="1580154023416" duration="2497000" />
     </task>
     <servers />
   </component>
@@ -92,85 +93,53 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="873" y="380" key="#Project_Structure" timestamp="1580073715043">
+    <state x="736" y="377" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580154042758">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="873" y="380" key="#Project_Structure/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580073715043" />
-    <state x="736" y="377" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579835378375">
+    <state x="736" y="377" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580154042758" />
+    <state x="1011" y="506" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580153778595">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="736" y="377" key="#com.intellij.execution.impl.EditConfigurationsDialog/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1579835378375" />
-    <state x="1086" y="438" key="#com.intellij.ide.util.MemberChooser" timestamp="1580073291185">
+    <state x="1011" y="506" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580153778595" />
+    <state x="956" y="436" key="FileChooserDialogImpl" timestamp="1580154202054">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1086" y="438" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580073291185" />
-    <state x="1011" y="506" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1579835366688">
+    <state x="956" y="436" key="FileChooserDialogImpl/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580154202054" />
+    <state width="2517" height="413" key="GridCell.Tab.0.bottom" timestamp="1580156362572">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1011" y="506" key="#com.intellij.ide.util.TreeClassChooserDialog/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1579835366688" />
-    <state x="1011" y="469" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580073275454">
+    <state width="2517" height="413" key="GridCell.Tab.0.bottom/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580156362572" />
+    <state width="2517" height="413" key="GridCell.Tab.0.center" timestamp="1580156362572">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1011" y="469" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580073275454" />
-    <state x="1061" y="463" key="FileChooserDialogImpl" timestamp="1580073913659">
+    <state width="2517" height="413" key="GridCell.Tab.0.center/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580156362572" />
+    <state width="2517" height="413" key="GridCell.Tab.0.left" timestamp="1580156362572">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1061" y="463" key="FileChooserDialogImpl/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580073913659" />
-    <state width="2517" height="458" key="GridCell.Tab.0.bottom" timestamp="1580100938537">
+    <state width="2517" height="413" key="GridCell.Tab.0.left/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580156362572" />
+    <state width="2517" height="413" key="GridCell.Tab.0.right" timestamp="1580156362572">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2517" height="458" key="GridCell.Tab.0.bottom/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580075692808" />
-    <state width="2517" height="458" key="GridCell.Tab.0.bottom/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580100938537" />
-    <state width="2517" height="288" key="GridCell.Tab.0.bottom/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@3840.720.2560.1440" timestamp="1579911434901" />
-    <state width="2517" height="458" key="GridCell.Tab.0.center" timestamp="1580100938537">
+    <state width="2517" height="413" key="GridCell.Tab.0.right/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580156362572" />
+    <state width="2517" height="508" key="GridCell.Tab.1.bottom" timestamp="1580154000840">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2517" height="458" key="GridCell.Tab.0.center/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580075692808" />
-    <state width="2517" height="458" key="GridCell.Tab.0.center/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580100938537" />
-    <state width="2517" height="288" key="GridCell.Tab.0.center/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@3840.720.2560.1440" timestamp="1579911434900" />
-    <state width="2517" height="458" key="GridCell.Tab.0.left" timestamp="1580100938537">
+    <state width="2517" height="508" key="GridCell.Tab.1.bottom/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580154000840" />
+    <state width="2517" height="508" key="GridCell.Tab.1.center" timestamp="1580154000840">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2517" height="458" key="GridCell.Tab.0.left/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580075692808" />
-    <state width="2517" height="458" key="GridCell.Tab.0.left/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580100938537" />
-    <state width="2517" height="288" key="GridCell.Tab.0.left/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@3840.720.2560.1440" timestamp="1579911434900" />
-    <state width="2517" height="458" key="GridCell.Tab.0.right" timestamp="1580100938537">
+    <state width="2517" height="508" key="GridCell.Tab.1.center/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580154000840" />
+    <state width="2517" height="508" key="GridCell.Tab.1.left" timestamp="1580154000840">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2517" height="458" key="GridCell.Tab.0.right/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580075692808" />
-    <state width="2517" height="458" key="GridCell.Tab.0.right/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580100938537" />
-    <state width="2517" height="288" key="GridCell.Tab.0.right/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@3840.720.2560.1440" timestamp="1579911434900" />
-    <state width="2517" height="288" key="GridCell.Tab.1.bottom" timestamp="1580099579108">
+    <state width="2517" height="508" key="GridCell.Tab.1.left/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580154000840" />
+    <state width="2517" height="508" key="GridCell.Tab.1.right" timestamp="1580154000840">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2517" height="288" key="GridCell.Tab.1.bottom/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580075042133" />
-    <state width="2517" height="288" key="GridCell.Tab.1.bottom/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580099579108" />
-    <state width="2517" height="288" key="GridCell.Tab.1.bottom/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@3840.720.2560.1440" timestamp="1579911434809" />
-    <state width="2517" height="288" key="GridCell.Tab.1.center" timestamp="1580099579108">
+    <state width="2517" height="508" key="GridCell.Tab.1.right/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580154000840" />
+    <state x="761" y="296" key="SettingsEditor" timestamp="1580154203351">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2517" height="288" key="GridCell.Tab.1.center/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580075042133" />
-    <state width="2517" height="288" key="GridCell.Tab.1.center/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580099579108" />
-    <state width="2517" height="288" key="GridCell.Tab.1.center/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@3840.720.2560.1440" timestamp="1579911434809" />
-    <state width="2517" height="288" key="GridCell.Tab.1.left" timestamp="1580099579108">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2517" height="288" key="GridCell.Tab.1.left/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580075042133" />
-    <state width="2517" height="288" key="GridCell.Tab.1.left/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580099579108" />
-    <state width="2517" height="288" key="GridCell.Tab.1.left/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@3840.720.2560.1440" timestamp="1579911434809" />
-    <state width="2517" height="288" key="GridCell.Tab.1.right" timestamp="1580099579108">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2517" height="288" key="GridCell.Tab.1.right/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580075042133" />
-    <state width="2517" height="288" key="GridCell.Tab.1.right/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580099579108" />
-    <state width="2517" height="288" key="GridCell.Tab.1.right/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@3840.720.2560.1440" timestamp="1579911434809" />
-    <state x="782" y="364" key="SettingsEditor" timestamp="1580073991328">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="782" y="364" key="SettingsEditor/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580073991328" />
-    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1580073940441">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580073940441" />
+    <state x="761" y="296" key="SettingsEditor/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580154203351" />
   </component>
 </project>
