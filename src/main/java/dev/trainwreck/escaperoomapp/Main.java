@@ -1,8 +1,7 @@
 package dev.trainwreck.escaperoomapp;
 
-import dev.trainwreck.escaperoomapp.data.gameobjects.Game;
+import dev.trainwreck.escaperoomapp.data.gameobjects.GameData;
 import dev.trainwreck.escaperoomapp.util.Util;
-import dev.trainwreck.escaperoomapp.data.ClueData;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,7 +13,7 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-    public static Game game = new Game("Test Game");
+    public static GameData gameData = new GameData("Test Game");
 
     private Stage primaryStage;
     private GridPane mainLayout;
@@ -23,12 +22,14 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Escape Room App");
+        this.primaryStage.setMinWidth(1280);
+        this.primaryStage.setMinHeight(720);
         showMainView();
     }
 
     @Override
-    public void stop() throws Exception {
-        game.saveGame();
+    public void stop() {
+        gameData.saveGame();
     }
 
     private void showMainView() throws IOException {
@@ -49,8 +50,8 @@ public class Main extends Application {
     private static void initEnvironmentSetup(){
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        }catch (Exception e){
-
+        }catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

@@ -1,47 +1,45 @@
 package dev.trainwreck.escaperoomapp.controlers;
 
 import dev.trainwreck.escaperoomapp.Main;
-import javafx.application.Platform;
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
-import javafx.scene.control.ListView.EditEvent;
 
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 
-import java.awt.event.ActionEvent;
-import java.util.Set;
 
-
-public class ClueScreenControler {
+public class ClueScreenController {
     @FXML TextField textfield;
-    @FXML ListView clueList;
-    private ObservableList observableList;
+    @FXML ListView<String> clueList;
+    @FXML ImageView clueImage;
+    private ObservableList<String> observableList;
 
     @FXML
     public void initialize(){
-        observableList = Main.game.getClueData();
+        observableList = Main.gameData.getClueData();
         clueList.setItems(observableList);
+        clueImage.setImage(Main.gameData.getImage());
     }
 
     @FXML
     private void testButton(KeyEvent keyEvent){
+        if(textfield.getText().isEmpty())return;
         if(keyEvent.getCode().equals(KeyCode.ENTER)){
             if(!observableList.contains(textfield.getText())){
                 observableList.add(0,textfield.getText());
                 clueList.setItems(observableList);
             }else{
-                observableList.remove(observableList.indexOf(textfield.getText()));
+                observableList.remove(textfield.getText());
                 observableList.add(0,textfield.getText());
                 clueList.setItems(observableList);
             }
             clueList.setItems(observableList);
             textfield.setText("");
-            Main.game.setClueData(observableList);
+            Main.gameData.setClueData(observableList);
         }
 
 
@@ -49,16 +47,17 @@ public class ClueScreenControler {
 
     @FXML
     private void listRemove(KeyEvent keyEvent){
-        if(keyEvent.getCode().equals(KeyCode.DELETE)){
-            observableList.remove(observableList.indexOf(clueList.getSelectionModel().getSelectedItem().toString()));
+        if(keyEvent.getCode().equals(KeyCode.DELETE) && !observableList.isEmpty()){
+            observableList.remove(clueList.getSelectionModel().getSelectedItem());
             clueList.setItems(observableList);
-            Main.game.setClueData(observableList);
+            Main.gameData.setClueData(observableList);
         }
     }
 
     @FXML
     private void listSelect(MouseEvent event){
-        textfield.setText(clueList.getSelectionModel().getSelectedItem().toString());
+        if(observableList.isEmpty())return;
+        textfield.setText(clueList.getSelectionModel().getSelectedItem());
     }
 
 }

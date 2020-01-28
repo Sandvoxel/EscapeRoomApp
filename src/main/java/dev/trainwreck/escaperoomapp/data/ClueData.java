@@ -10,17 +10,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ClueData {
-    private ObservableList observableList = FXCollections.observableArrayList();
+    private ObservableList<String> observableList = FXCollections.observableArrayList();
 
-    public ClueData(String game) {
-        loadClueData(game);
+    public ClueData() {
     }
 
-    public void setObservableList(ObservableList observableList) {
+    public void setObservableList(ObservableList<String> observableList) {
         this.observableList = observableList;
     }
 
-    public ObservableList getObservableList() {
+    public ObservableList<String> getObservableList() {
         return observableList;
     }
 
@@ -28,14 +27,14 @@ public class ClueData {
         try {
             // write object to file
             Files.createDirectories(Paths.get("data/"+game));
-            FileOutputStream fos = new FileOutputStream("data/"+game+"/ClueDataSavefile.ser");
+            FileOutputStream fos = new FileOutputStream("data/"+game+"/ClueDataSaveFile.ser");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(new ArrayList<String>(observableList));
+            oos.writeObject(new ArrayList<>(observableList));
             oos.close();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -43,7 +42,7 @@ public class ClueData {
     public void loadClueData(String game){
         try {
             // write object to file
-            FileInputStream fos = new FileInputStream("data/"+game+"/ClueDataSavefile.ser");
+            FileInputStream fos = new FileInputStream("data/"+game+"/ClueDataSaveFile.ser");
             ObjectInputStream ois = new ObjectInputStream(fos);
             List<String> list = (List<String>) ois.readObject();
             observableList = FXCollections.observableList(list);
@@ -51,10 +50,10 @@ public class ClueData {
 
         }catch (FileNotFoundException e){
             System.err.println("Clue File Not Found");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+
 }

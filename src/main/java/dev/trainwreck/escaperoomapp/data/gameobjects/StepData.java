@@ -2,12 +2,12 @@ package dev.trainwreck.escaperoomapp.data.gameobjects;
 
 import java.util.UUID;
 
-public class Step {
+public class StepData {
     private UUID stepId;
     private String stepName;
     private boolean StepCompleted = false;
 
-    public Step(String stepName) {
+    public StepData(String stepName) {
         this.stepId = UUID.randomUUID();
         this.stepName = stepName;
     }

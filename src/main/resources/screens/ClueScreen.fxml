@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.trainwreck.escaperoomapp.controlers.ClueScreenControler">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="817.0" prefWidth="1256.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.trainwreck.escaperoomapp.controlers.ClueScreenController">
   <columnConstraints>
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.6666615804037" minWidth="10.0" prefWidth="283.33334859212243" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.6666666666666" minWidth="10.0" prefWidth="285.99998474121094" />
+      <ColumnConstraints hgrow="ALWAYS" maxWidth="1.0E17" minWidth="10.0" prefWidth="653.6665852864583" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="9.999999999999999E22" minWidth="677.666748046875" prefWidth="677.666748046875" />
   </columnConstraints>
   <rowConstraints>
-    <RowConstraints maxHeight="186.66666412353516" minHeight="0.0" prefHeight="36.33333333333333" vgrow="SOMETIMES" />
-    <RowConstraints maxHeight="360.6666717529297" minHeight="10.0" prefHeight="179.66665649414065" vgrow="SOMETIMES" />
-    <RowConstraints maxHeight="242.33334350585938" minHeight="10.0" prefHeight="208.33334350585938" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="47.0" minHeight="47.0" prefHeight="47.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="309.0" percentHeight="40.0" prefHeight="0.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" percentHeight="55.0" prefHeight="0.0" vgrow="ALWAYS" />
   </rowConstraints>
    <children>
-      <TextField fx:id="textfield" onKeyPressed="#testButton">
+      <TextField fx:id="textfield" onKeyPressed="#testButton" prefHeight="25.0" prefWidth="321.0" promptText="Input Clue" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
          <GridPane.margin>
-            <Insets left="20.0" top="20.0" />
+            <Insets left="20.0" />
          </GridPane.margin>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
       </TextField>
       <ListView fx:id="clueList" onKeyPressed="#listRemove" onMouseClicked="#listSelect" prefHeight="185.0" prefWidth="247.0" GridPane.rowIndex="1">
          <opaqueInsets>
@@ -31,5 +37,16 @@
             <Insets left="20.0" />
          </GridPane.margin>
       </ListView>
+      <ImageView fx:id="clueImage" fitHeight="305.0" fitWidth="568.0" pickOnBounds="true" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2147483647" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets top="-20.0" />
+         </GridPane.margin>
+         <image>
+            <Image url="@../../../../../../../../Downloads/Beautiful-Bumblebee-Wallpaper.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
    </children>
 </GridPane>

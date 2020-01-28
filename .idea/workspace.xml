@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d1a5735-6513-4b79-a251-125f9c58b745" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EscapeRoomApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/controlers/ClueScreenControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/ClueData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/screens/ClueScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6d1a5735-6513-4b79-a251-125f9c58b745" name="Default Changelist" comment="fixed some bugs and have almost have image of clue screen complete.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/controlers/MainScreenControler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/gameobjects/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/gameobjects/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/gameobjects/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/gameobjects/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/gameobjects/Step.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/gameobjects/Step.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/util/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/screens/MainScreen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/controlers/ClueScreenControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/controlers/ClueScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/ClueData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/ClueData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/gameobjects/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/gameobjects/GameData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/gameobjects/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/gameobjects/RoomData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/gameobjects/Step.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/trainwreck/escaperoomapp/data/gameobjects/StepData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/screens/ClueScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/screens/ClueScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +38,11 @@
     </system>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Sandvoxel &lt;kovalchickzz@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WzYCDAwFNxXyUQ51iXRveHjfZm" />
@@ -64,6 +65,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
@@ -85,12 +87,16 @@
       <option name="presentableId" value="Default" />
       <updated>1580153760050</updated>
       <workItem from="1580153761297" duration="240000" />
-      <workItem from="1580154023416" duration="2497000" />
+      <workItem from="1580154023416" duration="10836000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed some bugs and have almost have image of clue screen complete." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some bugs and have almost have image of clue screen complete." />
   </component>
   <component name="WindowStateProjectService">
     <state x="736" y="377" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580154042758">
@@ -101,42 +107,62 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1011" y="506" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580153778595" />
+    <state x="419" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580170611642">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="419" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580170611642" />
+    <state x="1029" y="559" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580183892120">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1029" y="559" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580183892120" />
+    <state x="821" y="316" key="CommitChangelistDialog2" timestamp="1580186798342">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="821" y="316" key="CommitChangelistDialog2/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580186798342" />
     <state x="956" y="436" key="FileChooserDialogImpl" timestamp="1580154202054">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="956" y="436" key="FileChooserDialogImpl/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580154202054" />
-    <state width="2517" height="413" key="GridCell.Tab.0.bottom" timestamp="1580156362572">
+    <state width="2517" height="413" key="GridCell.Tab.0.bottom" timestamp="1580186798369">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2517" height="413" key="GridCell.Tab.0.bottom/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580156362572" />
-    <state width="2517" height="413" key="GridCell.Tab.0.center" timestamp="1580156362572">
+    <state width="2517" height="413" key="GridCell.Tab.0.bottom/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580186798369" />
+    <state width="2517" height="413" key="GridCell.Tab.0.center" timestamp="1580186798369">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2517" height="413" key="GridCell.Tab.0.center/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580156362572" />
-    <state width="2517" height="413" key="GridCell.Tab.0.left" timestamp="1580156362572">
+    <state width="2517" height="413" key="GridCell.Tab.0.center/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580186798369" />
+    <state width="2517" height="413" key="GridCell.Tab.0.left" timestamp="1580186798369">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2517" height="413" key="GridCell.Tab.0.left/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580156362572" />
-    <state width="2517" height="413" key="GridCell.Tab.0.right" timestamp="1580156362572">
+    <state width="2517" height="413" key="GridCell.Tab.0.left/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580186798369" />
+    <state width="2517" height="413" key="GridCell.Tab.0.right" timestamp="1580186798369">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2517" height="413" key="GridCell.Tab.0.right/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580156362572" />
-    <state width="2517" height="508" key="GridCell.Tab.1.bottom" timestamp="1580154000840">
+    <state width="2517" height="413" key="GridCell.Tab.0.right/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580186798369" />
+    <state width="2517" height="508" key="GridCell.Tab.1.bottom" timestamp="1580173025929">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2517" height="508" key="GridCell.Tab.1.bottom/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580154000840" />
-    <state width="2517" height="508" key="GridCell.Tab.1.center" timestamp="1580154000840">
+    <state width="2517" height="508" key="GridCell.Tab.1.bottom/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580173025929" />
+    <state width="2517" height="508" key="GridCell.Tab.1.center" timestamp="1580173025928">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2517" height="508" key="GridCell.Tab.1.center/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580154000840" />
-    <state width="2517" height="508" key="GridCell.Tab.1.left" timestamp="1580154000840">
+    <state width="2517" height="508" key="GridCell.Tab.1.center/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580173025928" />
+    <state width="2517" height="508" key="GridCell.Tab.1.left" timestamp="1580173025928">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2517" height="508" key="GridCell.Tab.1.left/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580154000840" />
-    <state width="2517" height="508" key="GridCell.Tab.1.right" timestamp="1580154000840">
+    <state width="2517" height="508" key="GridCell.Tab.1.left/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580173025928" />
+    <state width="2517" height="508" key="GridCell.Tab.1.right" timestamp="1580173025928">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2517" height="508" key="GridCell.Tab.1.right/0.0.2560.1440/6400.882.1920.1080/3840.720.2560.1440@0.0.2560.1440" timestamp="1580154000840" />
+    <state width="2517" height="508" key="GridCell.Tab.1.right/6400.882.1920.1080/3840.720.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1580173025928" />
     <state x="761" y="296" key="SettingsEditor" timestamp="1580154203351">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
