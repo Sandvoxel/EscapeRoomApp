@@ -17,13 +17,14 @@ public class ClueScreenController {
     @FXML TextField textfield;
     @FXML ListView<String> clueList;
     @FXML ImageView clueImage;
+    private int GameIndex = 0;
     private ObservableList<String> observableList;
 
     @FXML
     public void initialize(){
-        observableList = Main.gameData.getClueData();
+        observableList = Main.gameDataList.get(GameIndex).getClueData();
         clueList.setItems(observableList);
-        clueImage.setImage(Main.gameData.getImage());
+        clueImage.setImage(Main.gameDataList.get(GameIndex).getImage());
     }
 
     @FXML
@@ -40,21 +41,32 @@ public class ClueScreenController {
             }
             clueList.setItems(observableList);
             textfield.setText("");
-            Main.gameData.setClueData(observableList);
+            Main.gameDataList.get(GameIndex).setClueData(observableList);
         }
 
 
     }
+
+
 
     @FXML
     private void listRemove(KeyEvent keyEvent){
         if(keyEvent.getCode().equals(KeyCode.DELETE) && !observableList.isEmpty()){
             observableList.remove(clueList.getSelectionModel().getSelectedItem());
             clueList.setItems(observableList);
-            Main.gameData.setClueData(observableList);
+            Main.gameDataList.get(GameIndex).setClueData(observableList);
         }
     }
-
+    @FXML
+    private void setGame(){
+        GameIndex--;
+        initialize();
+    }
+    @FXML
+    private void setGameNext(){
+        GameIndex++;
+        initialize();
+    }
     @FXML
     private void listSelect(MouseEvent event){
         if(observableList.isEmpty())return;

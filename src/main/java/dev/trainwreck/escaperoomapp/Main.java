@@ -4,10 +4,13 @@ import dev.trainwreck.escaperoomapp.data.gameobjects.GameData;
 import dev.trainwreck.escaperoomapp.util.FileHelper;
 import dev.trainwreck.escaperoomapp.util.Util;
 import javafx.application.Application;
+import javafx.event.EventHandler;
+import javafx.event.EventType;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -16,7 +19,6 @@ import java.util.List;
 
 public class Main extends Application {
 
-    public static GameData gameData = new GameData("test-game");
 
     public static List<GameData> gameDataList = new ArrayList<>();
 
@@ -25,19 +27,16 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        gameDataList.add(gameData);
-        gameDataList.add(new GameData("meme-game"));
-        gameDataList.add(new GameData("gay-game"));
-        gameDataList.add(new GameData("mom-game"));
 
-        FileHelper.CreateGameDataDir(gameDataList);
+        gameDataList = Util.loadGameData();
         this.primaryStage = primaryStage;
         showMainView();
     }
 
     @Override
     public void stop() throws Exception {
-        gameData.saveGame();
+        FileHelper.CreateGameDataDir(gameDataList);
+        gameDataList.get(1).saveGame();
     }
 
     private void showMainView() throws IOException {
@@ -49,15 +48,20 @@ public class Main extends Application {
         mainLayout = loader.load();
         Scene scene = new Scene(mainLayout);
         primaryStage.setScene(scene);
+/*        primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            public void handle(WindowEvent we) {
+                System.out.println("Stage is closing");
+            }
+        });*/
         primaryStage.show();
     }
+
 
     public static void main( String[] args )
     {
         initEnvironmentSetup();
         launch(args);
     }
-
     private static void initEnvironmentSetup(){
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());

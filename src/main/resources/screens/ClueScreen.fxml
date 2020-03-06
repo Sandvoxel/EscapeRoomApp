@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.Cursor?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.*?>
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="817.0" prefWidth="1256.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.trainwreck.escaperoomapp.controlers.ClueScreenController">
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="817.0" prefWidth="1256.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.trainwreck.escaperoomapp.controlers.ClueScreenController">
   <columnConstraints>
       <ColumnConstraints hgrow="ALWAYS" maxWidth="1.0E17" minWidth="10.0" prefWidth="653.6665852864583" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="9.999999999999999E22" minWidth="677.666748046875" prefWidth="677.666748046875" />
@@ -45,5 +49,14 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </ImageView>
+      <Button mnemonicParsing="false" onAction="#setGame" text="pre" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#setGameNext" text="Next" GridPane.rowIndex="2">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="34.0" />
+         </GridPane.margin>
+      </Button>
    </children>
 </GridPane>
